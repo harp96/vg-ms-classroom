@@ -1,0 +1,11 @@
+services:
+  vg-ms-classroom:
+    image: christianca/vg-ms-classroom:v1
+    container_name: vg-ms-classroom
+    ports:
+      - "8094:8094"
+    environment:
+      - STUDY_PROGRAM_SERVICE_URL=https://vg-ms-study-programme-production.up.railway.app/common/api/v1/study-program
+      - ACADEMIC_PERIOD_SERVICE_URL=https://vg-ms-academicperiod-production.up.railway.app/management/api/v1/academic_period
+      - ENROLLMENT_DETAIL_SERVICE_URL=https://vg-ms-new-enrollment-detail-production.up.railway.app/management/api/v1/enrollment-detail
+      - DIDACTIC_UNIT_SERVICE_URL=https://vg-ms-didactic-unit-production.up.railway.app/common/api/v1/didactic-unit
