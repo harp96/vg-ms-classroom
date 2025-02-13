@@ -35,6 +35,6 @@ services:
   acdemic-period:
     url: ${ACADEMIC_PERIOD_SERVICE_URL:https://detailed-rosalinda-brillith-c11c160b.koyeb.app/management/api/v1/academic_period}
   enrollment-detail:
-    url: ${ENROLLMENT_DETAIL_SERVICE_URL:https://wittering-emu-piero-408a23e9.koyeb.app/management/api/v1/enrollment-detail}
+    url: ${ENROLLMENT_DETAIL_SERVICE_URL:hhttps://wittering-emu-piero-408a23e9.koyeb.app/management/api/v1/enrollment-detail/new-list}
   didactic-unit:
     url: ${DIDACTIC_UNIT_SERVICE_URL:https://thorough-myrah-vallegrande2-5aeaf151.koyeb.app/common/api/v1/didactic-unit}
