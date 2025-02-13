@@ -31,10 +31,10 @@ springdoc:
 # servicos externos
 services:
   study-program:
-    url: ${STUDY_PROGRAM_SERVICE_URL:https://vg-ms-study-programme-production.up.railway.app/common/api/v1/study-program}
+    url: ${STUDY_PROGRAM_SERVICE_URL:https://active-sabra-vallegrande-e443c570.koyeb.app/common/api/v1/study-program}
   acdemic-period:
-    url: ${ACADEMIC_PERIOD_SERVICE_URL:https://vg-ms-academicperiod-production.up.railway.app/management/api/v1/academic_period}
+    url: ${ACADEMIC_PERIOD_SERVICE_URL:https://detailed-rosalinda-brillith-c11c160b.koyeb.app/management/api/v1/academic_period}
   enrollment-detail:
-    url: ${ENROLLMENT_DETAIL_SERVICE_URL:https://vg-ms-new-enrollment-detail-production.up.railway.app/management/api/v1/enrollment-detail}
+    url: ${ENROLLMENT_DETAIL_SERVICE_URL:https://wittering-emu-piero-408a23e9.koyeb.app/management/api/v1/enrollment-detail}
   didactic-unit:
-    url: ${DIDACTIC_UNIT_SERVICE_URL:https://vg-ms-didactic-unit-production.up.railway.app/common/api/v1/didactic-unit}
+    url: ${DIDACTIC_UNIT_SERVICE_URL:https://thorough-myrah-vallegrande2-5aeaf151.koyeb.app/common/api/v1/didactic-unit}

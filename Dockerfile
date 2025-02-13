@@ -1,14 +1,14 @@
-
-# Usar una imagen base de Java
+# Utiliza una imagen base de Java
 FROM openjdk:17-jdk-alpine
-# Variables de entorno para la aplicación
-ENV APP_HOME=/app
-# Crear directorio de la aplicación
-RUN mkdir $APP_HOME
-WORKDIR $APP_HOME
-# Copiar el archivo jar del proyecto al contenedor
-COPY target/*.jar app.jar
-# Exponer el puerto de la aplicación
+
+# Establece el directorio de trabajo dentro del contenedor
+WORKDIR /app
+
+# Copia el archivo JAR de la aplicación al contenedor
+COPY target/vg-ms-classroom-0.0.1-SNAPSHOT.jar app.jar
+
+# Expone el puerto que utiliza la aplicación
 EXPOSE 8094
-# Comando para ejecutar la aplicación
-ENTRYPOINT ["java","-jar","app.jar"]
+
+# Define el comando de inicio de la aplicación
+CMD ["java", "-jar", "app.jar"]
